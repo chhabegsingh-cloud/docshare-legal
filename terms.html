@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DocShare — Terms &amp; Conditions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --brand:    #6C47FF;
+      --brand-lt: #EDE9FF;
+      --text:     #1A1A2E;
+      --muted:    #5E5E7A;
+      --border:   #E4E4F0;
+      --bg:       #F8F8FC;
+      --card:     #FFFFFF;
+      --radius:   12px;
+      --max:      760px;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    header {
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .header-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .logo-mark {
+      width: 32px; height: 32px;
+      background: linear-gradient(135deg, #6C47FF, #A78BFA);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .logo-mark svg { width: 18px; height: 18px; fill: white; }
+    .logo-text {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 17px;
+      color: var(--text);
+    }
+    .logo-text span { color: var(--brand); }
+    .header-link {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--brand);
+      text-decoration: none;
+      padding: 6px 14px;
+      border: 1.5px solid var(--brand);
+      border-radius: 100px;
+      transition: all .2s;
+    }
+    .header-link:hover {
+      background: var(--brand);
+      color: #fff;
+    }
+
+    .content {
+      max-width: var(--max);
+      margin: 32px auto 80px;
+      padding: 0 24px;
+    }
+
+    .doc-header {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      margin-bottom: 16px;
+    }
+    .doc-eyebrow {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--brand);
+      margin-bottom: 6px;
+    }
+    .doc-title {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .doc-meta { font-size: 13px; color: var(--muted); }
+
+    .section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 32px;
+      margin-bottom: 10px;
+    }
+    .section h2 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section h2 .num {
+      width: 26px; height: 26px;
+      background: var(--brand-lt);
+      color: var(--brand);
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .section p { color: var(--muted); margin-bottom: 10px; }
+    .section p:last-child { margin-bottom: 0; }
+    .section ul { list-style: none; margin: 8px 0 12px; padding: 0; }
+    .section ul li {
+      color: var(--muted);
+      padding: 4px 0 4px 18px;
+      position: relative;
+    }
+    .section ul li::before {
+      content: '–';
+      position: absolute;
+      left: 0;
+      color: var(--brand);
+      font-weight: 600;
+    }
+    .section strong { color: var(--text); font-weight: 600; }
+
+    .contact-card {
+      background: var(--brand-lt);
+      border: 1px solid #D8CCFF;
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-top: 4px;
+    }
+    .contact-card p { color: var(--brand); margin: 0; }
+    .contact-card a { color: var(--brand); font-weight: 600; }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 600px) {
+      .doc-header, .section { padding: 20px; }
+      .doc-title { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="#">
+      <div class="logo-mark">
+        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM6 20V4h5v7h7v9H6z"/></svg>
+      </div>
+      <div class="logo-text">Doc<span>Share</span></div>
+    </a>
+    <a class="header-link" href="privacy.html">Privacy Policy</a>
+  </div>
+</header>
+
+<div class="content">
+
+  <div class="doc-header">
+    <div class="doc-eyebrow">Replik Media Pvt. Ltd</div>
+    <div class="doc-title">Terms &amp; Conditions</div>
+    <div class="doc-meta">DocShare &nbsp;·&nbsp; Effective: July 1, 2025 &nbsp;·&nbsp; Last updated: July 30, 2025</div>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">1</span>Acceptance of Terms</h2>
+    <p>By downloading, installing, or using the DocShare application ("App"), you agree to be bound by these Terms and Conditions ("Terms"). These Terms constitute a legally binding agreement between you and Replik Media Pvt. Ltd ("Company", "we", "us", or "our").</p>
+    <p>If you do not agree to these Terms, do not use the App.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">2</span>Description of Service</h2>
+    <p>DocShare is a mobile application that provides:</p>
+    <ul>
+      <li>Encrypted document storage and sharing (Drive)</li>
+      <li>Real-time chat messaging between registered users</li>
+      <li>Audio and video calling via LiveKit</li>
+      <li>Task management (Todo)</li>
+    </ul>
+    <p>We reserve the right to modify, suspend, or discontinue any feature of the App at any time without prior notice.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">3</span>User Accounts</h2>
+    <p>To use DocShare, you must register an account using a valid email address or phone number. You are responsible for:</p>
+    <ul>
+      <li>Maintaining the confidentiality of your account credentials</li>
+      <li>All activity that occurs under your account</li>
+      <li>Notifying us immediately of any unauthorised use of your account</li>
+    </ul>
+    <p>We reserve the right to suspend or terminate accounts that violate these Terms.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">4</span>Acceptable Use</h2>
+    <p>You agree not to use DocShare to:</p>
+    <ul>
+      <li>Upload, share, or transmit any unlawful, harmful, threatening, abusive, or defamatory content</li>
+      <li>Infringe any third-party intellectual property, privacy, or other rights</li>
+      <li>Transmit spam, malware, viruses, or any other malicious code</li>
+      <li>Attempt to gain unauthorised access to any part of the App or its infrastructure</li>
+      <li>Use the App for any commercial purpose without our prior written consent</li>
+      <li>Harass, stalk, or harm other users</li>
+      <li>Violate any applicable local, national, or international laws or regulations</li>
+    </ul>
+    <p>Violation of these rules may result in immediate termination of your account.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">5</span>User Content</h2>
+    <p>You retain ownership of all content you upload to DocShare. By uploading content, you grant Replik Media Pvt. Ltd a limited, non-exclusive, royalty-free licence to store and transmit your content solely for the purpose of providing the App's services.</p>
+    <p>You represent and warrant that you own or have the necessary rights to the content you upload, and that it does not violate any applicable laws or third-party rights.</p>
+    <p>We do not actively monitor user content but reserve the right to remove content that violates these Terms.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">6</span>Intellectual Property</h2>
+    <p>The DocShare application, including its design, code, graphics, and brand identity, is the exclusive property of Replik Media Pvt. Ltd and is protected by intellectual property laws.</p>
+    <p>You may not copy, modify, distribute, sell, or lease any part of the App without our prior written permission.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">7</span>Privacy</h2>
+    <p>Your use of DocShare is also governed by our <a href="privacy.html" style="color:var(--brand);font-weight:600;">Privacy Policy</a>, which is incorporated into these Terms by reference. Please review the Privacy Policy to understand our practices regarding your personal data.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">8</span>Disclaimers</h2>
+    <p>DocShare is provided on an <strong>"as is"</strong> and <strong>"as available"</strong> basis without warranties of any kind, either express or implied, including but not limited to:</p>
+    <ul>
+      <li>Merchantability or fitness for a particular purpose</li>
+      <li>Uninterrupted, timely, secure, or error-free operation</li>
+      <li>Accuracy or reliability of any information obtained through the App</li>
+    </ul>
+    <p>We do not warrant that defects will be corrected or that the App is free of viruses or other harmful components.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">9</span>Limitation of Liability</h2>
+    <p>To the maximum extent permitted by applicable law, Replik Media Pvt. Ltd shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of data, profits, or goodwill, arising from:</p>
+    <ul>
+      <li>Your use or inability to use the App</li>
+      <li>Unauthorised access to or alteration of your data</li>
+      <li>Conduct of any third party on the App</li>
+    </ul>
+    <p>Our total liability to you for any claim shall not exceed the amount you paid us in the twelve (12) months preceding the claim.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">10</span>Termination</h2>
+    <p>We may suspend or terminate your access to DocShare at any time, with or without cause or notice. Upon termination, your right to use the App ceases immediately.</p>
+    <p>You may delete your account at any time by contacting us at <strong>support@thereplik.com</strong>. After account deletion, your data will be removed as described in our Privacy Policy.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">11</span>Governing Law</h2>
+    <p>These Terms shall be governed by and construed in accordance with the laws of India. Any disputes arising under these Terms shall be subject to the exclusive jurisdiction of the courts located in India.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">12</span>Changes to Terms</h2>
+    <p>We reserve the right to modify these Terms at any time. Changes will be effective upon posting to this page with an updated date. Your continued use of DocShare following any changes constitutes your acceptance of the new Terms.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">13</span>Contact Us</h2>
+    <p>If you have any questions about these Terms and Conditions, please contact:</p>
+    <div class="contact-card">
+      <p><strong>Replik Media Pvt. Ltd</strong><br/>
+      DocShare Support<br/>
+      <a href="mailto:support@thereplik.com">support@thereplik.com</a></p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2025 Replik Media Pvt. Ltd &nbsp;·&nbsp; DocShare &nbsp;·&nbsp; All rights reserved
+</footer>
+
+</body>
+</html>
